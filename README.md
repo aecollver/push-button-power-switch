@@ -60,6 +60,12 @@ Simulation scenarios include:
 - Different supply voltages
 - Resistive and capacitive loads
 
+The circuit was also assembled on a breadboard to verify its operation with a physical momentary pushbutton.
+
+![Breadboard prototype of the push-button power switch](docs/images/breadboard.jpg)
+
+*Breadboard prototype of the push-button power switch, with an additional MOSFET for reverse-polarity protection not shown in the reference schematic.*
+
 ## Limitations
 
 The 5–25 V input range has not been fully validated in physical hardware. Select components appropriate for your intended operating voltage and load current, paying particular attention to MOSFET gate-source voltage limits, power dissipation, and capacitor voltage ratings.
