@@ -10,7 +10,7 @@ The goal was a simple circuit that could toggle power with a short button press,
 
 Although this sounds straightforward, I found that many existing discrete power-latch designs were surprisingly finicky. Some were clever and used very few components, but were difficult to understand or sensitive to timing. Others behaved unexpectedly when subjected to rapid button presses or when the button was held down too long, sometimes toggling the power state unintentionally. I wanted a circuit that behaved predictably, even when the button wasn't operated exactly as intended.
 
-This repository contains the KiCad schematic, including the simulation components needed to test the circuit directly in KiCad's simulator.
+This repository contains the KiCad hardware design and bill of materials, along with a simulation project in `simulation/` for testing the circuit directly in KiCad's simulator.
 
 ## Features
 
@@ -19,6 +19,7 @@ This repository contains the KiCad schematic, including the simulation component
 - Debounced input to prevent unintended toggling
 - Predictable behavior during rapid presses and extended button holds
 - No microcontroller or firmware required
+- Dual-channel power MOSFET provides load switching and reverse-polarity protection
 
 ## How It Works
 
@@ -33,7 +34,7 @@ The circuit consists of several functional stages:
 5. **ON-State Feedback:** Maintains the latch after the button is released.
 6. **OFF Enable Delay:** Prevents the initial button press from immediately switching the circuit off. This delay must be comfortably longer than the Power-On Pulse.
 7. **Qualified OFF Trigger:** Releases the latch on a subsequent button press, once the OFF Enable Delay has elapsed.
-8. **Load Switch:** Controls power delivery using a separate MOSFET, preventing capacitive loads from interfering with the latch.
+8. **Load Switch:** Controls power delivery using a separate MOSFET, preventing capacitive loads from interfering with the latch. The hardware design uses a dual-channel power MOSFET, with one channel for load switching and the other for reverse-polarity protection.
 
 See the schematic for component values and connections.
 
@@ -43,10 +44,16 @@ The project was created using KiCad 10.0.6.
 
 | File | Description |
 |---|---|
+| **[hardware/](hardware/)** | **Hardware design** |
 | [push-button-power-switch.kicad_sch](hardware/push-button-power-switch.kicad_sch) | KiCad schematic |
 | [push-button-power-switch.kicad_pro](hardware/push-button-power-switch.kicad_pro) | KiCad project configuration |
+| [push-button-power-switch.csv](hardware/push-button-power-switch.csv) | Hardware bill of materials (BOM) |
+| **[simulation/](simulation/)** | **Simulation project** |
+| [push-button-power-switch-simulation.kicad_sch](simulation/push-button-power-switch-simulation.kicad_sch) | Simulation schematic with sources and a simulated load |
+| [push-button-power-switch-simulation.kicad_pro](simulation/push-button-power-switch-simulation.kicad_pro) | Simulation project configuration |
+| [push-button-power-switch-simulation.wbk](simulation/push-button-power-switch-simulation.wbk) | KiCad simulation workbook with saved analysis and plot settings |
 
-The schematic includes simulation sources and a simulated load for testing the switching behavior.
+Open the project in `simulation/` to test the switching behavior using the included simulation sources and simulated load.
 
 ## Simulation and Testing
 
@@ -64,7 +71,7 @@ The circuit was also assembled on a breadboard to verify its operation with a ph
 
 ![Breadboard prototype of the push-button power switch](docs/images/breadboard.jpg)
 
-*Breadboard prototype of the push-button power switch, with an additional MOSFET for reverse-polarity protection not shown in the reference schematic.*
+*Breadboard prototype of the push-button power switch.*
 
 ## Limitations
 

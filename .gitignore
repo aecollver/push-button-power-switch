@@ -1,4 +1,7 @@
+# KiCad
 .history/
 *.kicad_prl
 *.lck
-*.wbk
+
+# Windows
+*:Zone.Identifier

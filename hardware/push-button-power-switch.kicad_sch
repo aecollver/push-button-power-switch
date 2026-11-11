@@ -165,6 +165,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -305,42 +471,59 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:SWITCH"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
+		(symbol "SamacSys:DMP3028LSD-13"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "S"
-				(at 2.54 2.54 0)
+			(property "Reference" "Q"
+				(at 21.59 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Value" "SWITCH"
-				(at 2.54 0 0)
+			(property "Value" "DMP3028LSD-13"
+				(at 21.59 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "SOIC127P600X170-8N"
+				(at 21.59 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com//assets/Datasheets/DMP3028LSD.pdf"
+				(at 21.59 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "MOSFET MOSFET BVDSS"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -351,8 +534,8 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Switches"
-				(at 0 16.51 0)
+			(property "Height" "1.7"
+				(at 21.59 -394.92 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -360,10 +543,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Description" "Voltage controlled switch symbol for simulation only"
-				(at 0 0 0)
+			(property "Mouser Part Number" "621-DMP3028LSD-13"
+				(at 21.59 -494.92 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -371,10 +555,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Sim.Device" "SW"
-				(at 0 0 0)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=HXx4m3XcTe1Oo5qgV%252BCezQ%3D%3D"
+				(at 21.59 -594.92 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -382,10 +567,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Sim.Type" "V"
-				(at 0 0 0)
+			(property "Manufacturer_Name" "Diodes Incorporated"
+				(at 21.59 -694.92 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -393,21 +579,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Sim.Params" "thr=0 ron=1"
-				(at 2.54 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Sim.Pins" "1=no+ 2=no- 3=ctrl+ 4=ctrl-"
-				(at 0 13.97 0)
+			(property "Manufacturer_Part_Number" "DMP3028LSD-13"
+				(at 21.59 -794.92 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -415,59 +591,13 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SWITCH_0_1"
-				(circle
-					(center 0 2.032)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.032)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.524) (xy 1.778 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SWITCH_1_1"
-				(circle
-					(center -5.08 0)
-					(radius 2.54)
+			(symbol "DMP3028LSD-13_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 20.32 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -476,66 +606,10 @@
 						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy -4.826 3.81) (xy -4.318 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.826 -3.81) (xy -4.318 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.572 4.064) (xy -4.572 3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 0.889 0)
-					)
-					(stroke
-						(width 0)
-						(type dash)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "V"
-					(at -5.08 0 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
 				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "N+"
+					(at 0 0 0)
+					(length 5.08)
+					(name "S1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -551,9 +625,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "N-"
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "G1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -568,10 +642,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 5.08 270)
-					(length 2.54)
-					(name "C+"
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "S2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -586,10 +660,292 @@
 						)
 					)
 				)
-				(pin input line
-					(at -5.08 -5.08 90)
-					(length 2.54)
-					(name "C-"
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "G2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -7.62 180)
+					(length 5.08)
+					(name "D2_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -5.08 180)
+					(length 5.08)
+					(name "D2_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -2.54 180)
+					(length 5.08)
+					(name "D1_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 0 180)
+					(length 5.08)
+					(name "D1_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SamacSys:FSM101"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "S"
+				(at 26.67 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "FSM101"
+				(at 26.67 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "FSM101"
+				(at 26.67 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.te.com/en/product-1437565-3.html"
+				(at 26.67 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "50 mA Tactile Switch, Round Actuator, Off (On), Brass, Silver Contact Plating, Low Profile, 24 VDC, Alcoswitch FSM100-104"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Height" "7.5"
+				(at 26.67 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Part Number" "506-FSM101"
+				(at 26.67 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/FSM101?qs=emy4W%2FC1B3wcgDwCZ%2FMUoA%3D%3D"
+				(at 26.67 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Name" "TE Connectivity"
+				(at 26.67 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Manufacturer_Part_Number" "FSM101"
+				(at 26.67 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(symbol "FSM101_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 25.4 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 30.48 -2.54 180)
+					(length 5.08)
+					(name "NO_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "NO_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 0 180)
+					(length 5.08)
+					(name "COM_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "COM_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -607,41 +963,59 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Simulation_SPICE:VDC"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.0254)
-			)
+		(symbol "SamacSys:T50201500000G"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "V"
-				(at 2.54 2.54 0)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Value" "1"
-				(at 2.54 0 0)
+			(property "Value" "T50201500000G"
+				(at 16.51 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "T50201500000G"
+				(at 16.51 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/18/9t_Oefo5So2A-1379158.pdf"
+				(at 16.51 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Description" "Pluggable Terminal Blocks TB WIR PRO 180D SOL"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -652,8 +1026,8 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-				(at 0 0 0)
+			(property "Height" "8.9"
+				(at 16.51 -394.92 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -661,10 +1035,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Description" "Voltage source, DC"
-				(at 0 0 0)
+			(property "Mouser Part Number" "649-T502015000J0G"
+				(at 16.51 -494.92 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -672,10 +1047,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Sim.Pins" "1=+ 2=-"
-				(at 0 0 0)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/T50201500000G?qs=Mv7BduZupUj7X%2FJbrShOSA%3D%3D"
+				(at 16.51 -594.92 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -683,10 +1059,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Sim.Type" "DC"
-				(at 0 0 0)
+			(property "Manufacturer_Name" "Amphenol"
+				(at 16.51 -694.92 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -694,10 +1071,11 @@
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left top)
 				)
 			)
-			(property "Sim.Device" "V"
-				(at 0 0 0)
+			(property "Manufacturer_Part_Number" "T50201500000G"
+				(at 16.51 -794.92 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -705,82 +1083,13 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify left top)
 				)
 			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VDC_0_0"
-				(polyline
-					(pts
-						(xy -1.27 0.254) (xy 1.27 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -0.254) (xy -1.27 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -0.254) (xy -0.254 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.254) (xy 0.762 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "+"
-					(at 0 1.905 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "VDC_0_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
+			(symbol "T50201500000G_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -789,373 +1098,9 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "VDC_1_1"
 				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Simulation_SPICE:VPWL"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.0254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "V"
-				(at 2.54 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "VPWL"
-				(at 2.54 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Voltage source, piece-wise linear"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Pins" "1=+ 2=-"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Sim.Device" "V"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Sim.Params" "pwl=\"0 -1 50n -1 51n 0 97n 1 171n -1 200n -1\""
-				(at 2.54 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Sim.Type" "PWL"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "simulation"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "VPWL_0_0"
-				(polyline
-					(pts
-						(xy -1.778 -1.016) (xy -0.762 1.016) (xy -0.254 0) (xy 0.762 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "+"
-					(at 0 1.905 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "VPWL_0_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "VPWL_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
+					(at 0 0 0)
+					(length 5.08)
 					(name "1"
 						(effects
 							(font
@@ -1172,8 +1117,8 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
+					(at 0 -2.54 0)
+					(length 5.08)
 					(name "2"
 						(effects
 							(font
@@ -1853,19 +1798,6 @@
 		)
 	)
 	(rectangle
-		(start 18.288 68.326)
-		(end 58.928 164.084)
-		(stroke
-			(width 0)
-			(type dash)
-			(color 72 72 72 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "062a0c89-558f-4ef7-a60c-d15c247e213c")
-	)
-	(rectangle
 		(start 143.51 68.58)
 		(end 163.83 92.71)
 		(stroke
@@ -1879,8 +1811,8 @@
 		(uuid "2a9891fc-b0ad-4608-98e4-aacd3b5c073e")
 	)
 	(rectangle
-		(start 105.41 93.98)
-		(end 123.19 128.27)
+		(start 105.41 104.14)
+		(end 123.19 138.43)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1893,7 +1825,7 @@
 	)
 	(rectangle
 		(start 148.59 110.49)
-		(end 212.09 138.43)
+		(end 203.2 138.43)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1905,8 +1837,8 @@
 		(uuid "4413554f-68f7-4649-b6eb-ea54d90cd471")
 	)
 	(rectangle
-		(start 78.74 93.98)
-		(end 102.87 128.27)
+		(start 78.74 104.14)
+		(end 102.87 138.43)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1918,8 +1850,8 @@
 		(uuid "8ba939b5-ba76-4237-bf0d-67f166889548")
 	)
 	(rectangle
-		(start 81.28 68.58)
-		(end 111.76 87.63)
+		(start 77.978 68.58)
+		(end 95.758 87.63)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1942,19 +1874,6 @@
 			(type none)
 		)
 		(uuid "a5321ffa-7fb7-4f36-b010-b8883c53742f")
-	)
-	(rectangle
-		(start 220.98 50.8)
-		(end 247.65 74.93)
-		(stroke
-			(width 0)
-			(type dash)
-			(color 72 72 72 1)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "e3cd4fae-fb57-427d-8316-70ece638a2f1")
 	)
 	(text "OFF Enable Delay"
 		(exclude_from_sim no)
@@ -1988,19 +1907,9 @@
 		)
 		(uuid "1476d424-12dc-49a9-9b8c-5bc6d5d4516e")
 	)
-	(text ".options method=gear"
+	(text "Power\nOff\nPulse"
 		(exclude_from_sim no)
-		(at 38.862 74.422 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1f5b39f0-2081-4d94-a5ff-3ccabbff974a")
-	)
-	(text "Power Off Pulse"
-		(exclude_from_sim no)
-		(at 129.54 124.46 0)
+		(at 141.478 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2009,41 +1918,29 @@
 		)
 		(uuid "2749f9d4-802c-4b41-8525-99664f3cbac6")
 	)
-	(text "Simulated Push-button"
+	(text "Reverse Polarity\nProtection MOSFET"
 		(exclude_from_sim no)
-		(at 38.862 71.12 0)
+		(at 135.128 42.164 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "60a48294-fe28-4a42-8452-af50bf876f50")
+		(uuid "6bd35c59-9117-414b-af52-6b104270fd89")
 	)
-	(text "Input Voltage:\n5-25 V (simulated)"
+	(text "Power\nOn\nPulse"
 		(exclude_from_sim no)
-		(at 38.862 87.884 0)
+		(at 143.764 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
-		)
-		(uuid "73ac4924-501e-45c7-aa7a-edf5df9bf79e")
-	)
-	(text "Power-On Pulse"
-		(exclude_from_sim no)
-		(at 129.54 111.506 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
 		)
 		(uuid "82da2888-f450-458c-a4f3-cd774cfdff6b")
 	)
 	(text "Rising Edge\nDetection"
 		(exclude_from_sim no)
-		(at 114.3 124.714 0)
+		(at 114.3 134.874 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2051,30 +1948,19 @@
 		)
 		(uuid "a29506d7-cf62-46e7-bb10-1ceb27bb86ce")
 	)
-	(text "Startup State: OFF"
+	(text "Startup\nState: OFF"
 		(exclude_from_sim no)
-		(at 103.886 71.628 0)
+		(at 87.122 71.374 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
 		)
 		(uuid "d5e0211f-28f8-4830-881e-cd8bbfc5f785")
 	)
-	(text "Simulated Load"
-		(exclude_from_sim no)
-		(at 234.188 53.848 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "d91e9deb-2d0b-4558-8134-c3c54a305533")
-	)
 	(text "Switch Debounce"
 		(exclude_from_sim no)
-		(at 91.186 124.206 0)
+		(at 91.186 134.366 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2083,28 +1969,34 @@
 		(uuid "f544543b-bb2f-446d-81ef-8944eba44bf5")
 	)
 	(junction
-		(at 88.9 102.87)
+		(at 119.38 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02a1d558-45d5-4b77-8d15-d6ba6a5d1e97")
+	)
+	(junction
+		(at 88.9 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0f55f1c1-691e-4e86-a111-fc7dd8d29e26")
 	)
 	(junction
-		(at 67.31 102.87)
+		(at 114.3 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1ffaad37-fa7b-4ce1-940e-426ccfa62078")
+		(uuid "1ca03ed6-7f84-4d66-9cde-81fbc6821f18")
 	)
 	(junction
-		(at 67.31 77.47)
+		(at 57.15 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "288b9efb-9992-44fb-9721-3a096d602216")
+		(uuid "30c71021-3c32-43d7-9958-c47a1fa3213d")
 	)
 	(junction
-		(at 133.35 77.47)
+		(at 149.86 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3ad3c278-45c5-4c77-86b2-8a63f72e363d")
+		(uuid "38881a71-9bb4-45fe-b436-be648b7a18fc")
 	)
 	(junction
 		(at 152.4 77.47)
@@ -2113,10 +2005,10 @@
 		(uuid "423b4933-1d9d-4f2f-9d4c-cd0dca9b80a8")
 	)
 	(junction
-		(at 135.89 102.87)
+		(at 74.93 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "57970434-c256-4e4c-9d74-50f8c1a41105")
+		(uuid "44ba2c9c-bd31-48b2-83e8-5540861d37d4")
 	)
 	(junction
 		(at 179.07 90.17)
@@ -2125,34 +2017,40 @@
 		(uuid "641192c1-b00e-4c4a-aab1-7381ede8adda")
 	)
 	(junction
-		(at 152.4 90.17)
+		(at 74.93 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "70d6318d-9f57-4fcc-9cf6-dd17869dcfa1")
+		(uuid "68490d1f-0e8f-494a-b58f-7dd20f5a0240")
 	)
 	(junction
-		(at 125.73 102.87)
+		(at 114.3 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "72b68ca9-b5d4-4f9e-81c0-d4c5ddfea049")
+		(uuid "8009fc0e-67cf-49ab-a0fa-418244db842f")
 	)
 	(junction
-		(at 135.89 90.17)
+		(at 104.14 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "77a7e59e-aee0-4c8f-8750-5374460d9338")
+		(uuid "8f9a746b-1fda-4dfe-a895-c1b8f79498a4")
 	)
 	(junction
-		(at 116.84 102.87)
+		(at 152.4 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7da0301b-033d-4930-91e0-478cbcfeb2b2")
+		(uuid "912b5e2c-2af4-46c4-a312-782ef6856655")
 	)
 	(junction
-		(at 119.38 102.87)
+		(at 147.32 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8e165db3-b3c5-43a1-9b0f-bb4127221089")
+		(uuid "9763bf10-fd3f-4ada-8be8-a210a81c63e5")
+	)
+	(junction
+		(at 96.52 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a34f412b-2b11-4951-ba8b-ac8e104982a0")
 	)
 	(junction
 		(at 119.38 85.09)
@@ -2161,7 +2059,7 @@
 		(uuid "a3cc5638-48ce-4efb-b408-f6de550690fa")
 	)
 	(junction
-		(at 93.98 102.87)
+		(at 93.98 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4b91750-c11a-4471-a737-55cb59fb50a9")
@@ -2173,76 +2071,56 @@
 		(uuid "a74e7898-b928-4f61-827c-861605e23a4a")
 	)
 	(junction
-		(at 74.93 102.87)
+		(at 93.98 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bcbf1094-f455-43a9-a04e-ebbf11da74ef")
+		(uuid "a78e6049-9a27-406f-b244-86a677b53748")
 	)
 	(junction
-		(at 231.14 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c1d2be4f-7473-4cb4-b2a9-23f0b5f0582a")
-	)
-	(junction
-		(at 107.95 77.47)
+		(at 88.9 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c92dfe25-0dbb-436f-9bf2-1633fb7dd56e")
 	)
 	(junction
-		(at 35.56 77.47)
+		(at 149.86 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d4c512b0-f2bb-4334-b3c7-fbe4d13a9e91")
+		(uuid "d21390c7-3228-45e6-a881-1a3fc8e8a164")
 	)
 	(junction
-		(at 91.44 102.87)
+		(at 111.76 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "da5b5f90-072b-453f-b7af-0e6bb3e3352e")
+		(uuid "d90216f0-7652-400b-aa04-e7b5b432a96a")
 	)
 	(junction
-		(at 151.13 59.69)
+		(at 116.84 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dfc47ba0-0e03-4367-a2ce-f635c9cabac3")
+		(uuid "e84c3b25-34b1-471b-9936-f058f8d81247")
 	)
 	(junction
-		(at 74.93 77.47)
+		(at 74.93 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e13284fe-b843-42ca-ac55-ca16f26b6a5d")
+		(uuid "e8d5f1db-4ab3-4a08-83b7-e248499ed2ef")
 	)
 	(junction
-		(at 119.38 77.47)
+		(at 125.73 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f75eddce-af17-48c4-961a-d36ac3bb881c")
+		(uuid "f2d60919-6b8d-4eed-b46c-b8d7a195cf92")
+	)
+	(junction
+		(at 104.14 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f54b394b-bfbc-4678-b1b6-be1dbfb1a4f9")
 	)
 	(wire
 		(pts
-			(xy 30.48 107.95) (xy 30.48 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00e667e5-a8eb-48e9-a651-a1872577f5ef")
-	)
-	(wire
-		(pts
-			(xy 30.48 77.47) (xy 35.56 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02cc89f5-a90e-4fa6-aced-cb0050782735")
-	)
-	(wire
-		(pts
-			(xy 67.31 102.87) (xy 80.01 102.87)
+			(xy 57.15 113.03) (xy 74.93 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2252,7 +2130,17 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 115.57) (xy 88.9 113.03)
+			(xy 74.93 102.87) (xy 74.93 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06ef761a-3ec5-425e-99a2-095b4e191496")
+	)
+	(wire
+		(pts
+			(xy 88.9 125.73) (xy 88.9 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2262,103 +2150,13 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 102.87) (xy 127 102.87)
+			(xy 125.73 110.49) (xy 125.73 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0f57f708-ae51-4de4-8c9a-f91391feb4f8")
-	)
-	(wire
-		(pts
-			(xy 134.62 59.69) (xy 119.38 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10082f44-fd88-4ef6-a506-69b9efae70bb")
-	)
-	(wire
-		(pts
-			(xy 93.98 102.87) (xy 93.98 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13c5e4bc-24b6-4b76-859a-65eaa21b338d")
-	)
-	(wire
-		(pts
-			(xy 153.67 57.15) (xy 151.13 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e43d7ae-dfbe-4b63-8d0f-b7a674017a62")
-	)
-	(wire
-		(pts
-			(xy 157.48 90.17) (xy 157.48 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1eab3ab5-3244-49e1-84bd-0923dffdf647")
-	)
-	(wire
-		(pts
-			(xy 119.38 85.09) (xy 119.38 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "246773f8-556f-4a53-8fc7-0e5b058ce31e")
-	)
-	(wire
-		(pts
-			(xy 93.98 100.33) (xy 91.44 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2864a263-0f86-4cbe-8988-f3cde91c7dcf")
-	)
-	(wire
-		(pts
-			(xy 119.38 100.33) (xy 116.84 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a85cb6b-8f04-4ea9-b8fc-38c0364d6c1a")
-	)
-	(wire
-		(pts
-			(xy 40.64 102.87) (xy 67.31 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f97e953-75ad-4ec5-8c58-c44a9ba4f44d")
-	)
-	(wire
-		(pts
-			(xy 119.38 105.41) (xy 119.38 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32ab25f9-6148-4fad-81ec-c86fa43cf728")
+		(uuid "0cff3e3d-c1b3-4055-87fe-9a54e2f2b1f3")
 	)
 	(wire
 		(pts
@@ -2368,31 +2166,91 @@
 			(width 0)
 			(type default)
 		)
+		(uuid "13c5e4bc-24b6-4b76-859a-65eaa21b338d")
+	)
+	(wire
+		(pts
+			(xy 152.4 49.53) (xy 149.86 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e43d7ae-dfbe-4b63-8d0f-b7a674017a62")
+	)
+	(wire
+		(pts
+			(xy 157.48 100.33) (xy 157.48 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eab3ab5-3244-49e1-84bd-0923dffdf647")
+	)
+	(wire
+		(pts
+			(xy 74.93 95.25) (xy 74.93 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22e160b0-12a8-4a63-9b9f-5ca2f1c7915d")
+	)
+	(wire
+		(pts
+			(xy 73.66 102.87) (xy 74.93 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26998321-4320-4a15-b13d-354c2d73d36a")
+	)
+	(wire
+		(pts
+			(xy 74.93 46.99) (xy 74.93 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c59b5f7-8df3-47f5-b935-6afcd12de3a3")
+	)
+	(wire
+		(pts
+			(xy 119.38 115.57) (xy 119.38 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32ab25f9-6148-4fad-81ec-c86fa43cf728")
+	)
+	(wire
+		(pts
+			(xy 93.98 123.19) (xy 93.98 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
 		(uuid "34ff28f9-da7c-4554-a48d-abb41f07b81b")
 	)
 	(wire
 		(pts
-			(xy 119.38 59.69) (xy 119.38 77.47)
+			(xy 127 93.98) (xy 127 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3538d2da-d952-48da-8233-88b7d46efecf")
+		(uuid "356d7eb4-9136-44db-ae11-bccf7de97f60")
 	)
 	(wire
 		(pts
-			(xy 74.93 77.47) (xy 121.92 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37855907-b6ac-4c47-aa50-23ac067fdd0f")
-	)
-	(wire
-		(pts
-			(xy 125.73 115.57) (xy 125.73 102.87)
+			(xy 125.73 115.57) (xy 125.73 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2402,7 +2260,37 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 100.33) (xy 67.31 102.87)
+			(xy 147.32 54.61) (xy 149.86 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c54afb9-7777-4894-959f-55addd21ec4d")
+	)
+	(wire
+		(pts
+			(xy 149.86 52.07) (xy 149.86 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dcf4f66-46f8-42e4-9bb7-1988b902428e")
+	)
+	(wire
+		(pts
+			(xy 116.84 46.99) (xy 116.84 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e0fc54f-ac0e-43ac-ac89-bc998fcc5e19")
+	)
+	(wire
+		(pts
+			(xy 59.69 110.49) (xy 57.15 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2422,13 +2310,13 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 90.17) (xy 135.89 102.87)
+			(xy 74.93 113.03) (xy 80.01 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "47948c47-a4e4-4daf-a432-db0b62244a2d")
+		(uuid "459a1932-6295-454c-8319-c8ad15b10be5")
 	)
 	(wire
 		(pts
@@ -2452,13 +2340,23 @@
 	)
 	(wire
 		(pts
-			(xy 127 95.25) (xy 127 96.52)
+			(xy 119.38 113.03) (xy 125.73 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e966174-f860-47ba-8863-02329a9cd292")
+		(uuid "55f022ca-136a-40cb-9945-1b042ad0e0d2")
+	)
+	(wire
+		(pts
+			(xy 152.4 88.9) (xy 152.4 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61b23e49-4b26-4b39-abef-5e9f773c92f1")
 	)
 	(wire
 		(pts
@@ -2472,7 +2370,27 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 102.87) (xy 88.9 102.87)
+			(xy 149.86 46.99) (xy 147.32 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61da7436-4292-4313-ba70-5a61e1f0aa54")
+	)
+	(wire
+		(pts
+			(xy 172.72 54.61) (xy 173.99 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "638f02c7-db97-46ed-a87c-697e1cf8cf69")
+	)
+	(wire
+		(pts
+			(xy 87.63 113.03) (xy 88.9 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2482,53 +2400,73 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 77.47) (xy 74.93 85.09)
+			(xy 147.32 100.33) (xy 147.32 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f474c0a-428b-47e3-8a7b-e7625694254a")
+		(uuid "6be3e62c-b01a-4ae9-96e0-ab642e4c42dd")
 	)
 	(wire
 		(pts
-			(xy 30.48 77.47) (xy 30.48 102.87)
+			(xy 73.66 100.33) (xy 74.93 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7641467c-e66d-4823-b68d-b8bcb2611871")
+		(uuid "6c34bf54-6ff3-4943-8b5a-308ad27e069b")
 	)
 	(wire
 		(pts
-			(xy 135.89 90.17) (xy 157.48 90.17)
+			(xy 99.06 34.29) (xy 96.52 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78e582df-e809-46b3-b81c-b9f87338a163")
+		(uuid "6c4dc001-035d-4f7b-9db5-785600d404bc")
 	)
 	(wire
 		(pts
-			(xy 144.78 59.69) (xy 237.49 59.69)
+			(xy 43.18 100.33) (xy 43.18 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7c276797-5f4e-4824-83fb-cd8886e8f52e")
+		(uuid "71f3dfa9-9e2b-4162-a195-63f3c8725e02")
 	)
 	(wire
 		(pts
-			(xy 139.7 85.09) (xy 127 85.09)
+			(xy 149.86 36.83) (xy 149.86 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ccdd992-8e65-49c6-930b-5e46d4c7e7fb")
+		(uuid "7d5b9c87-2782-41ef-9a52-f5a97d2b39d0")
+	)
+	(wire
+		(pts
+			(xy 149.86 52.07) (xy 173.99 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e0046de-4ca8-4c49-b42b-96f3043d13df")
+	)
+	(wire
+		(pts
+			(xy 74.93 77.47) (xy 121.92 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "814d51b1-876b-4651-9419-0b6c7a5903ac")
 	)
 	(wire
 		(pts
@@ -2542,13 +2480,23 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 115.57) (xy 119.38 113.03)
+			(xy 119.38 125.73) (xy 119.38 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9063ad54-bb90-4fdd-8837-8993e2cf84b8")
+	)
+	(wire
+		(pts
+			(xy 74.93 77.47) (xy 74.93 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9270db84-8d83-44be-bb94-6c0d39857c07")
 	)
 	(wire
 		(pts
@@ -2562,17 +2510,17 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 102.87) (xy 134.62 102.87)
+			(xy 149.86 49.53) (xy 149.86 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "968f93b5-7fe4-4737-8589-61bd6b5a539b")
+		(uuid "9821c5f1-7b93-4966-9b70-5926da988fe9")
 	)
 	(wire
 		(pts
-			(xy 67.31 77.47) (xy 74.93 77.47)
+			(xy 74.93 46.99) (xy 121.92 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2582,57 +2530,47 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 74.93) (xy 133.35 77.47)
+			(xy 147.32 52.07) (xy 149.86 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a3ff080e-078b-4a53-9626-579f25232bed")
+		(uuid "a70cdcd8-b688-40c2-8f84-fd26c431ba42")
 	)
 	(wire
 		(pts
-			(xy 181.61 87.63) (xy 179.07 90.17)
+			(xy 127 86.36) (xy 127 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "acbdc8d6-c443-414d-b69d-f0dda010d314")
-	)
-	(polyline
-		(pts
-			(xy 73.66 87.63) (xy 73.66 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adaad5d7-62f9-4674-832e-39d79454a5c0")
+		(uuid "a98c214a-0b5e-45de-9add-32d755140450")
 	)
 	(wire
 		(pts
-			(xy 74.93 95.25) (xy 74.93 102.87)
+			(xy 121.92 54.61) (xy 119.38 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af630001-27be-45b7-bf6a-6d4ba60ee4a9")
+		(uuid "ab9ad01e-fcc2-48d2-8a46-63bb622c88f7")
 	)
 	(wire
 		(pts
-			(xy 138.43 100.33) (xy 135.89 102.87)
+			(xy 96.52 36.83) (xy 149.86 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b5f61f68-97a9-45c6-ad9c-bbac1c0f703a")
+		(uuid "b00e166c-7249-48a0-8fb4-f6600c21e847")
 	)
 	(wire
 		(pts
-			(xy 107.95 85.09) (xy 119.38 85.09)
+			(xy 88.9 85.09) (xy 119.38 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2640,19 +2578,9 @@
 		)
 		(uuid "b98e3184-e112-4a2b-9158-6668c34e0686")
 	)
-	(polyline
-		(pts
-			(xy 71.882 90.17) (xy 73.66 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c236ebc6-7ca1-466f-a98a-1c73021bd980")
-	)
 	(wire
 		(pts
-			(xy 134.62 115.57) (xy 149.86 115.57)
+			(xy 140.97 115.57) (xy 149.86 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2662,17 +2590,17 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 77.47) (xy 67.31 77.47)
+			(xy 119.38 54.61) (xy 119.38 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c3b551c9-40f8-454a-8591-76a513c3dab2")
+		(uuid "caaee1c9-4f2d-49e6-b066-fbdb55a67fd9")
 	)
 	(wire
 		(pts
-			(xy 134.62 90.17) (xy 135.89 90.17)
+			(xy 134.62 100.33) (xy 152.4 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2682,33 +2610,63 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 88.9) (xy 152.4 90.17)
+			(xy 115.57 113.03) (xy 119.38 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d91d02a2-e9b3-4378-bdc4-620b0596222c")
+		(uuid "cecc0cf9-e71f-4d28-8a69-6094f3f7958d")
 	)
 	(wire
 		(pts
-			(xy 139.7 67.31) (xy 139.7 85.09)
+			(xy 43.18 102.87) (xy 43.18 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "da088a6b-d846-4d36-8bad-92d28a35a723")
+		(uuid "cfe0ac59-98e0-49ab-9508-654a3c1418cd")
 	)
 	(wire
 		(pts
-			(xy 30.48 157.48) (xy 30.48 156.21)
+			(xy 105.41 49.53) (xy 111.76 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "da139ac9-5c4c-4cf8-a761-fa9071d79070")
+		(uuid "d103c40f-bf4e-436f-81de-dff9caa31110")
+	)
+	(wire
+		(pts
+			(xy 93.98 46.99) (xy 93.98 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d21609e9-3bb4-4dd2-8a8c-0b50fe06a5b1")
+	)
+	(wire
+		(pts
+			(xy 116.84 52.07) (xy 121.92 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7ba5562-d724-4547-bb8a-5cbcdc7d94bc")
+	)
+	(wire
+		(pts
+			(xy 111.76 50.8) (xy 111.76 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8ab0053-7f7c-45a7-80f2-61031b522ea9")
 	)
 	(wire
 		(pts
@@ -2722,17 +2680,27 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 82.55) (xy 127 85.09)
+			(xy 147.32 49.53) (xy 149.86 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "de9e8cb7-32cd-419a-861e-d5c4fa466770")
+		(uuid "dc28139e-c579-4562-b510-04a1565a6bd6")
 	)
 	(wire
 		(pts
-			(xy 88.9 102.87) (xy 88.9 105.41)
+			(xy 43.18 95.25) (xy 74.93 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df62599d-3e08-42dc-91e3-7248957e4f6b")
+	)
+	(wire
+		(pts
+			(xy 88.9 113.03) (xy 88.9 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2752,6 +2720,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 58.42) (xy 111.76 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0ea5b1b-b647-4f05-8ca9-c40c76670945")
+	)
+	(wire
+		(pts
 			(xy 179.07 77.47) (xy 179.07 80.01)
 		)
 		(stroke
@@ -2762,17 +2740,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 102.87) (xy 116.84 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e35cb5c5-1f35-4965-898a-77d00034ee0f")
-	)
-	(wire
-		(pts
-			(xy 88.9 102.87) (xy 107.95 102.87)
+			(xy 88.9 113.03) (xy 107.95 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2792,7 +2760,47 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 74.93) (xy 67.31 77.47)
+			(xy 43.18 113.03) (xy 57.15 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee112fc2-f05b-432f-b9e8-925d0e2a86e6")
+	)
+	(wire
+		(pts
+			(xy 133.35 110.49) (xy 125.73 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0b89f69-1e5e-4fc7-977f-bdbc81793631")
+	)
+	(wire
+		(pts
+			(xy 147.32 110.49) (xy 140.97 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f27a7ca4-493a-46c4-aae9-14d692d8c424")
+	)
+	(wire
+		(pts
+			(xy 152.4 100.33) (xy 157.48 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e5edc3-7232-44ba-9d48-7b35e51f1e74")
+	)
+	(wire
+		(pts
+			(xy 119.38 44.45) (xy 116.84 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2802,7 +2810,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 115.57) (xy 127 115.57)
+			(xy 125.73 115.57) (xy 133.35 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2810,8 +2818,28 @@
 		)
 		(uuid "f47b17e4-a113-4087-95db-c19b0c48f42e")
 	)
+	(wire
+		(pts
+			(xy 93.98 49.53) (xy 97.79 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff5d013b-0c19-470e-8b00-9de973ef1933")
+	)
+	(wire
+		(pts
+			(xy 111.76 49.53) (xy 121.92 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff608e45-9743-4d2a-bddb-ad1ba9927639")
+	)
 	(label "SW"
-		(at 69.85 100.33 0)
+		(at 59.69 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2820,38 +2848,18 @@
 		)
 		(uuid "0fbfbc57-9bd9-4100-a141-5ee29774f0aa")
 	)
-	(label "C"
-		(at 119.38 100.33 0)
+	(label "VIN_RAW"
+		(at 99.06 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "1337282e-6542-4a35-aaae-ab0ec53e061e")
-	)
-	(label "F"
-		(at 135.89 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1c57b13a-ae33-4c23-b3a3-f91b223789bf")
-	)
-	(label "G"
-		(at 181.61 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4887b9dc-cbb0-44ea-a8af-8f1e6af7c87b")
+		(uuid "3629d757-6b03-4935-b41d-42011bb6bb19")
 	)
 	(label "VIN"
-		(at 69.85 74.93 0)
+		(at 119.38 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2861,7 +2869,7 @@
 		(uuid "4c10a767-ecbd-4ece-9fbc-74ec6f7a8da4")
 	)
 	(label "VOUT"
-		(at 153.67 57.15 0)
+		(at 152.4 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2869,230 +2877,6 @@
 			(justify left bottom)
 		)
 		(uuid "9b42f86b-92e7-4986-8673-ccd7245f40ff")
-	)
-	(label "E"
-		(at 138.43 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "abacca76-cd99-4386-9ef7-6d61f901d64f")
-	)
-	(label "B"
-		(at 93.98 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "dab5359b-c91c-4e21-9bbf-fd2649143258")
-	)
-	(label "D"
-		(at 129.54 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e693867f-36d2-4f20-9ff6-d8d2795096ef")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 40.64 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "02c6f1af-e9f3-4bd4-bbe8-7fade7a8d39d")
-		(property "Reference" "#PWR04"
-			(at 40.64 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 40.64 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.64 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "226ee45c-7e60-4394-a38d-d9a9b83125bf")
-		)
-		(instances
-			(project "push-button-power-switch"
-				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:VDC")
-		(at 35.56 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0731bb09-468a-49e5-b4a8-54e6c6a8c240")
-		(property "Reference" "V1"
-			(at 39.37 81.1501 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "25"
-			(at 39.37 83.6901 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 35.56 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage source, DC"
-			(at 35.56 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 35.56 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 35.56 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 35.56 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "2"
-			(uuid "a091c07e-b23a-44fa-83bc-f4ad0777a13a")
-		)
-		(pin "1"
-			(uuid "6b3687d3-1ccf-4a6e-86af-7b3250bda7ca")
-		)
-		(instances
-			(project "push-button-power-switch"
-				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "V1")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -3128,7 +2912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 180.0352 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3139,7 +2923,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/UPY_GPHC_X7R_6_3V_TO_250V.pdf"
 			(at 179.07 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3151,6 +2935,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 179.07 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "CC0805KKX7R8BB225"
+			(at 179.07 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
 			(at 179.07 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3188,7 +2994,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0f83854d-657c-4a76-b70e-7628fcf429ff")
-		(property "Reference" "Q1"
+		(property "Reference" "Q2"
 			(at 127 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3208,7 +3014,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Toshiba_SOIC-4-6_4.4x3.6mm_P1.27mm"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 129.54 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -3219,7 +3025,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://diotec.com/request/datasheet/mmftp3401.pdf"
 			(at 127 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3274,6 +3080,28 @@
 				)
 			)
 		)
+		(property "Manufacturer Part Number" "MMFTP3401-AQ"
+			(at 127 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 127 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "c93f8afd-ebcc-4641-a493-d97c7053efd5")
 		)
@@ -3286,15 +3114,15 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "Q1")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 231.14 63.5 0)
+		(lib_id "power:GND")
+		(at 172.72 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3302,31 +3130,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "2762c849-0584-4be9-9ab3-b645d734e137")
-		(property "Reference" "C5"
-			(at 227.33 62.2299 0)
+		(fields_autoplaced yes)
+		(uuid "1651e04c-d7e9-487f-8900-024e055704d2")
+		(property "Reference" "#PWR08"
+			(at 172.72 60.96 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "1u"
-			(at 227.33 64.7699 0)
+		(property "Value" "GND"
+			(at 172.72 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 232.1052 67.31 0)
+			(at 172.72 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3337,7 +3165,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 63.5 0)
+			(at 172.72 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3347,8 +3175,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 231.14 63.5 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3359,15 +3187,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3d0dfa8a-c25f-4016-99df-818cda972deb")
-		)
-		(pin "2"
-			(uuid "97b3257b-f54d-4c6e-9c55-7bcc0b6c7cf7")
+			(uuid "5b26b3a8-4901-4358-bd70-f3c9a6652220")
 		)
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "C5")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -3375,7 +3200,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 130.81 102.87 90)
+		(at 137.16 110.49 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -3385,8 +3210,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f2455cf-6ca7-4c28-ae3c-3fe3e534019b")
-		(property "Reference" "R5"
-			(at 130.81 109.22 90)
+		(property "Reference" "R7"
+			(at 137.414 103.632 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3396,7 +3221,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 130.81 106.68 90)
+			(at 137.414 105.664 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3405,8 +3230,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 130.81 101.092 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 137.16 112.268 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3416,8 +3241,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 130.81 102.87 0)
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+			(at 137.16 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3428,7 +3253,29 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 130.81 102.87 0)
+			(at 137.16 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805FR-071KL"
+			(at 137.16 110.49 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 137.16 110.49 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3447,7 +3294,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "R5")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -3486,7 +3333,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 160.02 117.475 0)
 			(hide yes)
 			(show_name no)
@@ -3499,7 +3346,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
+		(property "Datasheet" "https://diotec.com/request/datasheet/mmbt3904.pdf"
 			(at 154.94 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -3555,6 +3402,28 @@
 				)
 			)
 		)
+		(property "Manufacturer Part Number" "MMBT3904"
+			(at 154.94 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 154.94 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "90f2c7cc-15c3-4bec-8c89-e9dd960028ad")
 		)
@@ -3575,7 +3444,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 119.38 115.57 0)
+		(at 119.38 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3585,8 +3454,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3aed3cf1-207f-45b1-bb98-5508e82f5299")
-		(property "Reference" "#PWR07"
-			(at 119.38 121.92 0)
+		(property "Reference" "#PWR05"
+			(at 119.38 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3597,7 +3466,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 120.65 0)
+			(at 119.38 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3607,7 +3476,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 115.57 0)
+			(at 119.38 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3618,7 +3487,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 115.57 0)
+			(at 119.38 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3629,7 +3498,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.38 115.57 0)
+			(at 119.38 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3645,85 +3514,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 30.48 156.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3d0ff08e-4f80-4817-8fb7-fb5daea8cd5c")
-		(property "Reference" "#PWR03"
-			(at 30.48 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 30.48 161.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 30.48 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "420450e7-212d-487b-9efd-23c020b1d1cf")
-		)
-		(instances
-			(project "push-button-power-switch"
-				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "#PWR03")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -3741,7 +3532,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3dd3adc7-30ec-4257-855f-bf2b2479f8a2")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR09"
 			(at 179.07 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -3801,7 +3592,85 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "#PWR010")
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 111.76 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48814bde-f92e-4dec-a5e8-cb962caa0cae")
+		(property "Reference" "#PWR04"
+			(at 111.76 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 111.76 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8b35a80b-eaab-4593-8011-9759bc7c995a")
+		)
+		(instances
+			(project "push-button-power-switch"
+				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -3819,7 +3688,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4957c135-d2f8-41d6-83ea-20fc0f135be4")
-		(property "Reference" "R7"
+		(property "Reference" "R9"
 			(at 154.94 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3841,7 +3710,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 150.622 85.09 90)
 			(hide yes)
 			(show_name no)
@@ -3852,7 +3721,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
 			(at 152.4 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -3864,6 +3733,28 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 152.4 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805FR-07100KL"
+			(at 152.4 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
 			(at 152.4 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -3883,88 +3774,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 237.49 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "49bd64d6-9d30-4b39-89d8-7f2bc307b29e")
-		(property "Reference" "R10"
-			(at 240.03 62.2299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1"
-			(at 240.03 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 235.712 63.5 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 237.49 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 237.49 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4639711b-ee84-429c-9243-e60a77153f4c")
-		)
-		(pin "2"
-			(uuid "7b83917c-a513-4a6a-8270-a16964ac08a3")
-		)
-		(instances
-			(project "push-button-power-switch"
-				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "R10")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -3972,7 +3782,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 115.57 0)
+		(at 88.9 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3982,8 +3792,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50105a7a-b975-428c-a083-927aa5e4c85a")
-		(property "Reference" "#PWR05"
-			(at 88.9 121.92 0)
+		(property "Reference" "#PWR01"
+			(at 88.9 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3994,7 +3804,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 120.65 0)
+			(at 88.9 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4004,7 +3814,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 115.57 0)
+			(at 88.9 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4015,7 +3825,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 115.57 0)
+			(at 88.9 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4026,7 +3836,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 115.57 0)
+			(at 88.9 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4042,7 +3852,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "#PWR05")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4050,7 +3860,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 107.95 81.28 0)
+		(at 88.9 81.28 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4061,7 +3871,7 @@
 		(dnp no)
 		(uuid "51023e16-86db-4f4c-b989-1051a2a2001c")
 		(property "Reference" "C2"
-			(at 104.14 80.0099 0)
+			(at 85.09 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4072,7 +3882,7 @@
 			)
 		)
 		(property "Value" "0.01u"
-			(at 104.14 82.5499 0)
+			(at 85.09 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4082,8 +3892,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 106.9848 85.09 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 87.9348 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4093,8 +3903,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 107.95 81.28 0)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/UPY_GPHC_X7R_6_3V_TO_250V.pdf"
+			(at 88.9 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4105,7 +3915,29 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 107.95 81.28 0)
+			(at 88.9 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "CC0805KRX7R0BB103"
+			(at 88.9 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 88.9 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4142,7 +3974,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "563a2e44-abfa-403a-ae53-8e1377081c3e")
-		(property "Reference" "R9"
+		(property "Reference" "R11"
 			(at 176.53 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4164,7 +3996,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 180.848 83.82 90)
 			(hide yes)
 			(show_name no)
@@ -4175,7 +4007,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
 			(at 179.07 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4187,6 +4019,28 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 179.07 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805FR-07100KL"
+			(at 179.07 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
 			(at 179.07 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -4206,7 +4060,110 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "R9")
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener")
+		(at 104.14 81.28 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5bbe2953-cb29-480c-b014-bc2767ec711e")
+		(property "Reference" "D2"
+			(at 101.6 82.5501 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "8.2 V"
+			(at 101.6 80.0101 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+			(at 104.14 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/3736/1/2221C87668F767AC35B3175E1CD9F15D10F52FB423EF1DA7655068B564B00BFC.pdf"
+			(at 104.14 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 104.14 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "BZT52-B8V2S_R1_00001"
+			(at 104.14 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 104.14 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8336eb72-3078-49e3-9e19-fdd900f4b19e")
+		)
+		(pin "2"
+			(uuid "41ac0029-00b0-455d-ad43-67fe426f1649")
+		)
+		(instances
+			(project "push-button-power-switch"
+				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4214,7 +4171,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 93.98 109.22 0)
+		(at 93.98 119.38 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4225,7 +4182,7 @@
 		(dnp no)
 		(uuid "608c65bb-9872-4959-b952-5db19410121d")
 		(property "Reference" "R2"
-			(at 96.52 110.4901 0)
+			(at 96.52 120.6501 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4236,7 +4193,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 96.52 107.9501 0)
+			(at 96.52 118.1101 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4246,8 +4203,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 92.202 109.22 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 92.202 119.38 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4257,8 +4214,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 93.98 109.22 0)
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+			(at 93.98 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4269,7 +4226,29 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 93.98 109.22 0)
+			(at 93.98 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805FR-07100KL"
+			(at 93.98 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 93.98 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4296,7 +4275,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 119.38 109.22 180)
+		(at 119.38 119.38 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4305,8 +4284,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "72c1ac8c-79bd-4431-9816-d347d8a22979")
-		(property "Reference" "R4"
-			(at 116.84 110.4901 0)
+		(property "Reference" "R5"
+			(at 116.84 120.6501 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4317,7 +4296,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 116.84 107.9501 0)
+			(at 116.84 118.1101 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4327,8 +4306,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 121.158 109.22 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 121.158 119.38 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4338,8 +4317,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 119.38 109.22 0)
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+			(at 119.38 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4350,7 +4329,29 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 119.38 109.22 0)
+			(at 119.38 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805FR-07100KL"
+			(at 119.38 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 119.38 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4369,7 +4370,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "R4")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4377,7 +4378,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 130.81 115.57 90)
+		(at 137.16 115.57 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4387,8 +4388,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "77342e13-06b4-4202-a86f-0177b3bc00ab")
-		(property "Reference" "R6"
-			(at 130.81 121.92 90)
+		(property "Reference" "R8"
+			(at 137.16 119.126 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4398,7 +4399,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 130.81 119.38 90)
+			(at 137.16 121.158 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4407,8 +4408,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 130.81 113.792 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 137.16 113.792 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4418,8 +4419,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 130.81 115.57 0)
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+			(at 137.16 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4430,7 +4431,29 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 130.81 115.57 0)
+			(at 137.16 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805FR-071KL"
+			(at 137.16 115.57 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 137.16 115.57 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4449,7 +4472,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "R6")
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -4457,7 +4480,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:MMBT3904")
-		(at 129.54 90.17 0)
+		(at 129.54 100.33 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4467,8 +4490,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7793af98-dba8-4810-8d9b-4116adf2ff23")
-		(property "Reference" "Q2"
-			(at 124.46 88.8999 0)
+		(property "Reference" "Q3"
+			(at 124.46 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4479,7 +4502,7 @@
 			)
 		)
 		(property "Value" "NPN"
-			(at 124.46 91.4399 0)
+			(at 124.46 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4489,8 +4512,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 124.46 92.075 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+			(at 124.46 102.235 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4502,8 +4525,8 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
-			(at 129.54 90.17 0)
+		(property "Datasheet" "https://diotec.com/request/datasheet/mmbt3904.pdf"
+			(at 129.54 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4515,7 +4538,7 @@
 			)
 		)
 		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
-			(at 129.54 90.17 0)
+			(at 129.54 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4526,7 +4549,7 @@
 			)
 		)
 		(property "Sim.Device" "NPN"
-			(at 129.54 90.17 0)
+			(at 129.54 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4537,7 +4560,7 @@
 			)
 		)
 		(property "Sim.Type" "GUMMELPOON"
-			(at 129.54 90.17 0)
+			(at 129.54 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4548,7 +4571,29 @@
 			)
 		)
 		(property "Sim.Pins" "1=B 2=E 3=C"
-			(at 129.54 90.17 0)
+			(at 129.54 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "MMBT3904"
+			(at 129.54 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 129.54 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4570,7 +4615,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "Q2")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -4578,7 +4623,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 93.98 115.57 0)
+		(at 93.98 125.73 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4589,8 +4634,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "794cf202-2f6b-4c16-9d7e-fa0cb780737d")
-		(property "Reference" "#PWR06"
-			(at 93.98 121.92 0)
+		(property "Reference" "#PWR02"
+			(at 93.98 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4601,7 +4646,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 120.65 0)
+			(at 93.98 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4611,7 +4656,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 115.57 0)
+			(at 93.98 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4622,7 +4667,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 115.57 0)
+			(at 93.98 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4633,7 +4678,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 93.98 115.57 0)
+			(at 93.98 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4649,84 +4694,6 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 35.56 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "82ec456d-8919-4cea-92f1-890323fc3b2d")
-		(property "Reference" "#PWR02"
-			(at 35.56 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 35.56 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a39e61fb-3596-476b-86b5-debac4e5a209")
-		)
-		(instances
-			(project "push-button-power-switch"
-				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
 					(reference "#PWR02")
 					(unit 1)
 				)
@@ -4735,7 +4702,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 88.9 109.22 0)
+		(at 88.9 119.38 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4746,7 +4713,7 @@
 		(dnp no)
 		(uuid "86eb221a-e20e-49cb-8288-a9bfab42df89")
 		(property "Reference" "C1"
-			(at 85.09 107.9499 0)
+			(at 85.09 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4757,7 +4724,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 85.09 110.4899 0)
+			(at 85.09 120.6499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4767,8 +4734,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 87.9348 113.03 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 87.9348 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4778,8 +4745,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 88.9 109.22 0)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/UPY-GPHC_X7R_6.3V-to-250V_24.pdf"
+			(at 88.9 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4790,7 +4757,29 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 88.9 109.22 0)
+			(at 88.9 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "CC0805KFX7R8BB105"
+			(at 88.9 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 88.9 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4817,8 +4806,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 231.14 67.31 0)
-		(mirror y)
+		(at 96.52 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4827,9 +4815,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "915cc9f2-16da-4bd1-9fb6-b1adc0fa08b8")
-		(property "Reference" "#PWR011"
-			(at 231.14 73.66 0)
+		(uuid "89ab2337-7191-4d67-8b4a-e1b4fc3f5786")
+		(property "Reference" "#PWR03"
+			(at 96.52 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4840,7 +4828,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 231.14 72.39 0)
+			(at 96.52 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4850,7 +4838,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 231.14 67.31 0)
+			(at 96.52 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4861,7 +4849,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 67.31 0)
+			(at 96.52 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4872,7 +4860,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 231.14 67.31 0)
+			(at 96.52 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4883,21 +4871,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "55044c4f-aa49-4428-acfa-14dbd5bad853")
+			(uuid "0a2ace50-6dd4-4bb9-898f-0d3f5ab6cdf9")
 		)
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "#PWR011")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_PMOS_GSD")
-		(at 139.7 62.23 270)
-		(mirror x)
+		(lib_id "SamacSys:DMP3028LSD-13")
+		(at 121.92 46.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4906,8 +4893,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9745ba92-cc2f-4b90-aa5e-ad145817497c")
-		(property "Reference" "Q3"
-			(at 139.7 53.34 90)
+		(property "Reference" "Q1"
+			(at 130.81 46.99 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4917,7 +4904,7 @@
 			)
 		)
 		(property "Value" "Load Switch MOSFET"
-			(at 139.7 55.88 90)
+			(at 134.62 58.928 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4926,8 +4913,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Toshiba_SOIC-4-6_4.4x3.6mm_P1.27mm"
-			(at 142.24 57.15 0)
+		(property "Footprint" "SamacSys:SOIC127P600X170-8N"
+			(at 143.51 141.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4935,10 +4922,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Datasheet" ""
-			(at 139.7 62.23 0)
+		(property "Datasheet" "https://www.diodes.com//assets/Datasheets/DMP3028LSD.pdf"
+			(at 143.51 241.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4946,10 +4934,11 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Description" "P-MOSFET transistor, gate/source/drain"
-			(at 139.7 62.23 0)
+		(property "Description" "MOSFET MOSFET BVDSS"
+			(at 121.92 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4960,7 +4949,7 @@
 			)
 		)
 		(property "Sim.Device" "PMOS"
-			(at 139.7 62.23 0)
+			(at 121.92 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4971,7 +4960,7 @@
 			)
 		)
 		(property "Sim.Type" "VDMOS"
-			(at 139.7 62.23 0)
+			(at 121.92 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4982,7 +4971,89 @@
 			)
 		)
 		(property "Sim.Pins" "1=G 2=S 3=D"
-			(at 139.7 62.23 0)
+			(at 121.92 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "DMP3028LSD-13"
+			(at 121.92 46.99 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "1.7"
+			(at 143.51 441.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "621-DMP3028LSD-13"
+			(at 143.51 541.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/DMP3028LSD-13?qs=HXx4m3XcTe1Oo5qgV%252BCezQ%3D%3D"
+			(at 143.51 641.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Diodes Incorporated"
+			(at 143.51 741.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DMP3028LSD-13"
+			(at 143.51 841.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 121.92 46.99 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5001,10 +5072,25 @@
 		(pin "2"
 			(uuid "ed5eae74-5520-4ea0-8500-893451bee6c1")
 		)
+		(pin "7"
+			(uuid "d50ac870-db57-4bdb-b42e-8c74630a1e2f")
+		)
+		(pin "8"
+			(uuid "19c4052f-f946-44cf-b2e6-f8906e36e447")
+		)
+		(pin "6"
+			(uuid "721dd2ea-8300-4bf5-87fe-0621ef39fe05")
+		)
+		(pin "4"
+			(uuid "3c473481-a975-493b-8adf-0b0e951a7b05")
+		)
+		(pin "5"
+			(uuid "80d93495-b9e7-468a-89ab-e68f1188de29")
+		)
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "Q3")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -5012,7 +5098,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 83.82 102.87 270)
+		(at 83.82 113.03 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5022,7 +5108,7 @@
 		(dnp no)
 		(uuid "978a8eba-c10c-4591-aa11-0321c5a1e24c")
 		(property "Reference" "R1"
-			(at 83.82 96.52 90)
+			(at 83.82 106.68 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5032,7 +5118,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 83.82 99.06 90)
+			(at 83.82 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5041,8 +5127,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 83.82 101.092 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 83.82 111.252 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5052,8 +5138,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 83.82 102.87 0)
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+			(at 83.82 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5064,7 +5150,29 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 83.82 102.87 0)
+			(at 83.82 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805FR-071KL"
+			(at 83.82 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 83.82 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5090,8 +5198,110 @@
 		)
 	)
 	(symbol
-		(lib_id "Simulation_SPICE:VPWL")
-		(at 30.48 152.4 0)
+		(lib_id "Device:D_Zener")
+		(at 101.6 49.53 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "97a71557-325f-4a26-b3d4-59dd1d379ef8")
+		(property "Reference" "D1"
+			(at 101.6 52.578 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "8.2V"
+			(at 101.346 54.864 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
+			(at 101.6 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/3736/1/2221C87668F767AC35B3175E1CD9F15D10F52FB423EF1DA7655068B564B00BFC.pdf"
+			(at 101.6 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 101.6 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "BZT52-B8V2S_R1_00001"
+			(at 101.6 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 101.6 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8563890a-fda4-4439-82ad-ed1596fe9c96")
+		)
+		(pin "2"
+			(uuid "0e2ab093-d650-42df-b70c-0321085bf3ef")
+		)
+		(instances
+			(project "push-button-power-switch"
+				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 127 90.17 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5100,31 +5310,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a9c23f6f-affa-4758-b3cb-e0a4c33f365d")
-		(property "Reference" "V2"
-			(at 34.29 149.7301 0)
+		(uuid "b17dc9e2-7158-4363-9a52-c87b3e8e27ed")
+		(property "Reference" "R6"
+			(at 129.54 88.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "VPWL"
-			(at 34.29 152.2701 0)
+		(property "Value" "10k"
+			(at 129.54 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:VQFN-48-1EP_7x7mm_P0.5mm_EP2.6x2.6mm"
-			(at 30.48 152.4 0)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 128.778 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5134,8 +5344,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 30.48 152.4 0)
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+			(at 127 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5145,8 +5355,8 @@
 				)
 			)
 		)
-		(property "Description" "Voltage source, piece-wise linear"
-			(at 30.48 152.4 0)
+		(property "Description" "Resistor"
+			(at 127 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5156,8 +5366,8 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 30.48 152.4 0)
+		(property "Manufacturer Part Number" "RC0805FR-0710KL"
+			(at 127 90.17 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5167,31 +5377,8 @@
 				)
 			)
 		)
-		(property "Sim.Device" "V"
-			(at 30.48 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Sim.Params" "PWL(0 0 1 0 1.01 1 1.2 1 1.21 0 5 0 5.01 1 8 1 8.01 0 9 0 9.01 1 15 1 15.11 0 16 0 16.01 1 16.1 1 16.11 0 28 0 28.01 1 28.1 1 28.11 0)"
-			(at 34.29 154.8101 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Sim.Type" "PWL"
-			(at 30.48 152.4 0)
+		(property "Sim.Params" ""
+			(at 127 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5200,57 +5387,80 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "c954dd0d-cd8e-4079-8bb9-7c55f1d9dcda")
 		)
 		(pin "1"
-			(uuid "41398e2f-5dc6-415d-ba55-6d4388f5b312")
+			(uuid "aa4a259f-8a31-460b-810f-fcd26f5ae90b")
+		)
+		(pin "2"
+			(uuid "66e7344f-31fe-4826-be74-e40a4646b933")
 		)
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "V2")
+					(reference "R6")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 74.93 90.17 90)
+		(lib_id "SamacSys:FSM101")
+		(at 73.66 100.33 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b3bb6d1d-1287-4123-84d4-ccac720caf45")
 		(property "Reference" "SW1"
-			(at 71.12 88.8999 90)
+			(at 57.658 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "SW_Push"
-			(at 71.12 91.4399 90)
+		(property "Value" "FSM101 / 1437565-3"
+			(at 57.404 91.694 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 69.85 90.17 0)
+		(property "Footprint" "SamacSys:FSM101"
+			(at 46.99 195.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/en/product-1437565-3.html"
+			(at 46.99 295.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "50 mA Tactile Switch, Round Actuator, Off (On), Brass, Silver Contact Plating, Low Profile, 24 VDC, Alcoswitch FSM100-104"
+			(at 73.66 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5260,8 +5470,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 69.85 90.17 0)
+		(property "Manufacturer Part Number" "FSM101"
+			(at 73.66 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5271,8 +5481,68 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 74.93 90.17 0)
+		(property "Height" "7.5"
+			(at 46.99 495.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "506-FSM101"
+			(at 46.99 595.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/FSM101?qs=emy4W%2FC1B3wcgDwCZ%2FMUoA%3D%3D"
+			(at 46.99 695.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 46.99 795.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "FSM101"
+			(at 46.99 895.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 73.66 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5288,6 +5558,12 @@
 		(pin "1"
 			(uuid "997f0edd-187b-42be-9890-2dfb5e373c07")
 		)
+		(pin "4"
+			(uuid "0f761e94-cc07-4ce8-81bb-b976b6945204")
+		)
+		(pin "3"
+			(uuid "998c5fe7-dd37-4545-8523-eabacba1c503")
+		)
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
@@ -5299,7 +5575,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 119.38 81.28 0)
+		(at 114.3 81.28 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5309,8 +5585,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b77b0c51-901c-4453-95d1-b093700b804c")
-		(property "Reference" "R3"
-			(at 116.84 80.0099 0)
+		(property "Reference" "R4"
+			(at 111.76 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5321,7 +5597,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 116.84 82.5499 0)
+			(at 111.76 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5331,8 +5607,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 121.158 81.28 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 116.078 81.28 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5342,8 +5618,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 119.38 81.28 0)
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+			(at 114.3 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5354,7 +5630,29 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 119.38 81.28 0)
+			(at 114.3 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805FR-07100KL"
+			(at 114.3 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 114.3 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5373,7 +5671,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "R3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -5391,7 +5689,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf15d254-5d98-4d86-a0ce-41edd2bbf158")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR07"
 			(at 157.48 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -5451,15 +5749,15 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "#PWR09")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 237.49 67.31 0)
+		(lib_id "SamacSys:T50201500000G")
+		(at 173.99 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5467,10 +5765,53 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c6fbc380-0765-4e3f-87da-6c710e81b1f5")
-		(property "Reference" "#PWR012"
-			(at 237.49 73.66 0)
+		(uuid "cb261966-9a11-46f9-be33-c9e5adf5971d")
+		(property "Reference" "J2"
+			(at 184.15 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "T50201500000G"
+			(at 184.15 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys:T50201500000G"
+			(at 190.5 146.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/18/9t_Oefo5So2A-1379158.pdf"
+			(at 190.5 246.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Pluggable Terminal Blocks TB WIR PRO 180D SOL"
+			(at 173.99 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5480,18 +5821,68 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 237.49 72.39 0)
+		(property "Height" "8.9"
+			(at 190.5 446.99 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 			)
 		)
-		(property "Footprint" ""
-			(at 237.49 67.31 0)
+		(property "Mouser Part Number" "649-T502015000J0G"
+			(at 190.5 546.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/T50201500000G?qs=Mv7BduZupUj7X%2FJbrShOSA%3D%3D"
+			(at 190.5 646.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol"
+			(at 190.5 746.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "T50201500000G"
+			(at 190.5 846.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 173.99 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5501,35 +5892,16 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 237.49 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 237.49 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(pin "2"
+			(uuid "cf533771-d790-41cb-ba11-c43801702ceb")
 		)
 		(pin "1"
-			(uuid "3414d1d6-b13c-4315-8e06-4fd1931062ff")
+			(uuid "b212a9af-72cf-44d4-bfe9-2d28e31ef3ca")
 		)
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "#PWR012")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -5569,7 +5941,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 154.94 127.635 0)
 			(hide yes)
 			(show_name no)
@@ -5582,7 +5954,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
+		(property "Datasheet" "https://diotec.com/request/datasheet/mmbt3904.pdf"
 			(at 160.02 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5638,6 +6010,28 @@
 				)
 			)
 		)
+		(property "Manufacturer Part Number" "MMBT3904"
+			(at 160.02 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 160.02 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f1df1126-ddc4-4245-a1b7-76d04abfb7c9")
 		)
@@ -5658,7 +6052,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 96.52 0)
+		(at 127 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5666,10 +6060,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d7c84096-1402-42da-b4bb-ed9b02b089af")
-		(property "Reference" "#PWR08"
-			(at 127 102.87 0)
+		(property "Reference" "#PWR06"
+			(at 127 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5680,7 +6073,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127 101.6 0)
+			(at 130.81 107.442 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5690,7 +6083,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 96.52 0)
+			(at 127 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5701,7 +6094,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 96.52 0)
+			(at 127 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5712,7 +6105,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 96.52 0)
+			(at 127 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5728,137 +6121,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:SWITCH")
-		(at 35.56 102.87 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "daf5c643-10e6-4638-8450-2d896a5b8f91")
-		(property "Reference" "S1"
-			(at 35.433 93.98 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SWITCH"
-			(at 40.64 91.948 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Switches"
-			(at 19.05 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage controlled switch symbol for simulation only"
-			(at 35.56 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "SW"
-			(at 35.56 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "V"
-			(at 35.56 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Params" "thr=0.5 ron=1"
-			(at 35.433 99.06 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=no+ 2=no- 3=ctrl+ 4=ctrl-"
-			(at 21.59 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "0207ee21-a5aa-4ff9-abd4-40855afd6acc")
-		)
-		(pin "4"
-			(uuid "bf4b0b63-9639-4dab-b0aa-e1f168f113db")
-		)
-		(pin "1"
-			(uuid "ec78a9ab-b4a3-41f3-ae5d-57db1459c1e5")
-		)
-		(pin "2"
-			(uuid "18aa6b36-a975-4e50-b533-96bb0481d4a2")
-		)
-		(instances
-			(project "push-button-power-switch"
-				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "S1")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -5876,7 +6139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4dd7e72-6087-4b4f-9cc8-4d363e2ec7b4")
-		(property "Reference" "R8"
+		(property "Reference" "R10"
 			(at 168.91 119.38 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5896,7 +6159,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 168.91 127.508 90)
 			(hide yes)
 			(show_name no)
@@ -5907,7 +6170,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
 			(at 168.91 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5929,6 +6192,28 @@
 				)
 			)
 		)
+		(property "Manufacturer Part Number" "RC0805FR-0710KL"
+			(at 168.91 125.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 168.91 125.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "daeb6987-7b32-4486-b61e-76bf1da74681")
 		)
@@ -5938,7 +6223,108 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "R8")
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 111.76 54.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e82421ed-5b1e-44ca-b92e-d84dddc425f3")
+		(property "Reference" "R3"
+			(at 107.696 53.594 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 107.696 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 113.538 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/catalog/specsheets/YAGEO_PYu_RC_Group_51_RoHS_L_12.pdf"
+			(at 111.76 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 111.76 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "RC0805FR-07100KL"
+			(at 111.76 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 111.76 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b7b3b7d-7777-4715-ab62-7cf7b55c39c1")
+		)
+		(pin "2"
+			(uuid "48c9419f-105c-47df-b0ed-ae3c4e7aab41")
+		)
+		(instances
+			(project "push-button-power-switch"
+				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5946,7 +6332,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 111.76 102.87 90)
+		(at 111.76 113.03 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5957,7 +6343,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee1c690d-bc21-4c58-8eef-7a4e0451bfaa")
 		(property "Reference" "C3"
-			(at 111.76 95.25 90)
+			(at 111.76 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5967,7 +6353,7 @@
 			)
 		)
 		(property "Value" "0.47u"
-			(at 111.76 97.79 90)
+			(at 111.76 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5976,8 +6362,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 115.57 101.9048 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 115.57 112.0648 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5987,8 +6373,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 111.76 102.87 0)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/508/1/UPY_GPHC_X7R_6_3V_TO_250V.pdf"
+			(at 111.76 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5999,7 +6385,29 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 111.76 102.87 0)
+			(at 111.76 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part Number" "CC0805KKX7R9BB474"
+			(at 111.76 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 111.76 113.03 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6019,6 +6427,160 @@
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SamacSys:T50201500000G")
+		(at 96.52 36.83 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fea13072-65d1-491a-a0cd-11a40024922d")
+		(property "Reference" "J1"
+			(at 86.36 29.21 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "T50201500000G"
+			(at 86.36 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys:T50201500000G"
+			(at 80.01 131.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/18/9t_Oefo5So2A-1379158.pdf"
+			(at 80.01 231.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Pluggable Terminal Blocks TB WIR PRO 180D SOL"
+			(at 96.52 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" "8.9"
+			(at 80.01 431.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Part Number" "649-T502015000J0G"
+			(at 80.01 531.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/T50201500000G?qs=Mv7BduZupUj7X%2FJbrShOSA%3D%3D"
+			(at 80.01 631.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol"
+			(at 80.01 731.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Manufacturer_Part_Number" "T50201500000G"
+			(at 80.01 831.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Sim.Params" ""
+			(at 96.52 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f78e97a6-9805-47a4-92aa-0f35d320053d")
+		)
+		(pin "1"
+			(uuid "4f7b31c8-675c-42fb-b35a-4d7d91175e85")
+		)
+		(instances
+			(project "push-button-power-switch"
+				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
+					(reference "J1")
 					(unit 1)
 				)
 			)
