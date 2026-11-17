@@ -10,6 +10,164 @@
 		(rev "1")
 	)
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -471,6 +629,105 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "SamacSys:DMP3028LSD-13"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -743,390 +1000,6 @@
 						)
 					)
 					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SamacSys:FSM101"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "S"
-				(at 26.67 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "FSM101"
-				(at 26.67 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "FSM101"
-				(at 26.67 -94.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Datasheet" "https://www.te.com/en/product-1437565-3.html"
-				(at 26.67 -194.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Description" "50 mA Tactile Switch, Round Actuator, Off (On), Brass, Silver Contact Plating, Low Profile, 24 VDC, Alcoswitch FSM100-104"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Height" "7.5"
-				(at 26.67 -394.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Part Number" "506-FSM101"
-				(at 26.67 -494.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/FSM101?qs=emy4W%2FC1B3wcgDwCZ%2FMUoA%3D%3D"
-				(at 26.67 -594.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Name" "TE Connectivity"
-				(at 26.67 -694.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Part_Number" "FSM101"
-				(at 26.67 -794.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(symbol "FSM101_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 25.4 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 30.48 -2.54 180)
-					(length 5.08)
-					(name "NO_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "NO_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 30.48 0 180)
-					(length 5.08)
-					(name "COM_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "COM_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "SamacSys:T50201500000G"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 16.51 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "T50201500000G"
-				(at 16.51 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "T50201500000G"
-				(at 16.51 -94.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/18/9t_Oefo5So2A-1379158.pdf"
-				(at 16.51 -194.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Description" "Pluggable Terminal Blocks TB WIR PRO 180D SOL"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Height" "8.9"
-				(at 16.51 -394.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Part Number" "649-T502015000J0G"
-				(at 16.51 -494.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/T50201500000G?qs=Mv7BduZupUj7X%2FJbrShOSA%3D%3D"
-				(at 16.51 -594.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Name" "Amphenol"
-				(at 16.51 -694.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Part_Number" "T50201500000G"
-				(at 16.51 -794.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(symbol "T50201500000G_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 15.24 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1796,6 +1669,191 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "push-button-power-switch:SW_Push_4Pin"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 4.572 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_4Pin_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Push_4Pin_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(hide yes)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(hide yes)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 143.51 68.58)
@@ -1987,10 +2045,10 @@
 		(uuid "1ca03ed6-7f84-4d66-9cde-81fbc6821f18")
 	)
 	(junction
-		(at 57.15 113.03)
+		(at 99.06 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "30c71021-3c32-43d7-9958-c47a1fa3213d")
+		(uuid "3531f57f-c182-4d1e-9534-c712086a817c")
 	)
 	(junction
 		(at 149.86 52.07)
@@ -2003,12 +2061,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "423b4933-1d9d-4f2f-9d4c-cd0dca9b80a8")
-	)
-	(junction
-		(at 74.93 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "44ba2c9c-bd31-48b2-83e8-5540861d37d4")
 	)
 	(junction
 		(at 179.07 90.17)
@@ -2045,12 +2097,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9763bf10-fd3f-4ada-8be8-a210a81c63e5")
-	)
-	(junction
-		(at 96.52 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a34f412b-2b11-4951-ba8b-ac8e104982a0")
 	)
 	(junction
 		(at 119.38 85.09)
@@ -2101,7 +2147,7 @@
 		(uuid "e84c3b25-34b1-471b-9936-f058f8d81247")
 	)
 	(junction
-		(at 74.93 113.03)
+		(at 74.93 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e8d5f1db-4ab3-4a08-83b7-e248499ed2ef")
@@ -2117,26 +2163,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f54b394b-bfbc-4678-b1b6-be1dbfb1a4f9")
-	)
-	(wire
-		(pts
-			(xy 57.15 113.03) (xy 74.93 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03e653f1-e898-48d0-9422-b5ad978f40a9")
-	)
-	(wire
-		(pts
-			(xy 74.93 102.87) (xy 74.93 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06ef761a-3ec5-425e-99a2-095b4e191496")
 	)
 	(wire
 		(pts
@@ -2190,23 +2216,13 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 95.25) (xy 74.93 100.33)
+			(xy 74.93 77.47) (xy 74.93 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "22e160b0-12a8-4a63-9b9f-5ca2f1c7915d")
-	)
-	(wire
-		(pts
-			(xy 73.66 102.87) (xy 74.93 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26998321-4320-4a15-b13d-354c2d73d36a")
 	)
 	(wire
 		(pts
@@ -2290,7 +2306,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 110.49) (xy 57.15 113.03)
+			(xy 77.47 100.33) (xy 74.93 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2410,17 +2426,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 100.33) (xy 74.93 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c34bf54-6ff3-4943-8b5a-308ad27e069b")
-	)
-	(wire
-		(pts
-			(xy 99.06 34.29) (xy 96.52 36.83)
+			(xy 101.6 34.29) (xy 99.06 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2430,13 +2436,13 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 100.33) (xy 43.18 95.25)
+			(xy 74.93 99.06) (xy 74.93 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "71f3dfa9-9e2b-4162-a195-63f3c8725e02")
+		(uuid "77de969c-b49c-480c-8813-dc582efc13db")
 	)
 	(wire
 		(pts
@@ -2487,16 +2493,6 @@
 			(type default)
 		)
 		(uuid "9063ad54-bb90-4fdd-8837-8993e2cf84b8")
-	)
-	(wire
-		(pts
-			(xy 74.93 77.47) (xy 74.93 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9270db84-8d83-44be-bb94-6c0d39857c07")
 	)
 	(wire
 		(pts
@@ -2620,16 +2616,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 102.87) (xy 43.18 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfe0ac59-98e0-49ab-9508-654a3c1418cd")
-	)
-	(wire
-		(pts
 			(xy 105.41 49.53) (xy 111.76 49.53)
 		)
 		(stroke
@@ -2690,16 +2676,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 95.25) (xy 74.93 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df62599d-3e08-42dc-91e3-7248957e4f6b")
-	)
-	(wire
-		(pts
 			(xy 88.9 113.03) (xy 88.9 115.57)
 		)
 		(stroke
@@ -2757,16 +2733,6 @@
 			(type default)
 		)
 		(uuid "e9afdcd6-98c9-4150-bec7-e8b6657e4350")
-	)
-	(wire
-		(pts
-			(xy 43.18 113.03) (xy 57.15 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee112fc2-f05b-432f-b9e8-925d0e2a86e6")
 	)
 	(wire
 		(pts
@@ -2839,7 +2805,7 @@
 		(uuid "ff608e45-9743-4d2a-bddb-ad1ba9927639")
 	)
 	(label "SW"
-		(at 59.69 110.49 0)
+		(at 77.47 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2849,7 +2815,7 @@
 		(uuid "0fbfbc57-9bd9-4100-a141-5ee29774f0aa")
 	)
 	(label "VIN_RAW"
-		(at 99.06 34.29 0)
+		(at 101.6 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2877,6 +2843,82 @@
 			(justify left bottom)
 		)
 		(uuid "9b42f86b-92e7-4986-8673-ccd7245f40ff")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 31.75 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0488ee0d-8eb5-485c-be7d-9e1cccc30af7")
+		(property "Reference" "H2"
+			(at 34.29 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3 Mounting Hole"
+			(at 34.29 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 31.75 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 31.75 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "push-button-power-switch"
+				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -2984,8 +3026,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_PMOS_GSD")
-		(at 127 80.01 270)
-		(mirror x)
+		(at 127 80.01 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3015,7 +3056,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 129.54 74.93 0)
+			(at 124.46 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3193,6 +3234,92 @@
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "push-button-power-switch:SW_Push_4Pin")
+		(at 74.93 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2549843d-adf8-4023-a3f5-bb272aa57a13")
+		(property "Reference" "SW1"
+			(at 76.2 92.71 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "FSM101 / 1437565-3"
+			(at 87.376 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SamacSys:FSM101"
+			(at 74.93 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "9076319d-c4e3-4a0a-bef4-9ba4f8b5905d")
+		)
+		(pin "2"
+			(uuid "061a3b2c-f06a-410c-9c7a-332ab1ee95a4")
+		)
+		(pin "1"
+			(uuid "32bc972e-578f-44fe-a33f-b68446f3216b")
+		)
+		(pin "4"
+			(uuid "a4724106-f607-4b19-a5ae-c01cc13270a6")
+		)
+		(instances
+			(project "push-button-power-switch"
+				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3679,6 +3806,7 @@
 	(symbol
 		(lib_id "Device:R")
 		(at 152.4 85.09 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3686,10 +3814,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4957c135-d2f8-41d6-83ea-20fc0f135be4")
 		(property "Reference" "R9"
-			(at 154.94 83.8199 0)
+			(at 149.86 83.8199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3700,7 +3827,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 154.94 86.3599 0)
+			(at 149.86 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3711,7 +3838,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 150.622 85.09 90)
+			(at 154.178 85.09 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3870,7 +3997,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "51023e16-86db-4f4c-b989-1051a2a2001c")
-		(property "Reference" "C2"
+		(property "Reference" "C1"
 			(at 85.09 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3956,7 +4083,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "C2")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -4268,6 +4395,82 @@
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 31.75 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61326662-6ef1-4df4-be2c-d02250be4975")
+		(property "Reference" "H1"
+			(at 34.29 39.3699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3 Mounting Hole"
+			(at 34.29 41.9099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 31.75 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 31.75 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "push-button-power-switch"
+				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -4701,6 +4904,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 31.75 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7965f49b-194c-458f-9020-e808e81c444d")
+		(property "Reference" "H3"
+			(at 34.29 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3 Mounting Hole"
+			(at 34.29 54.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 31.75 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 31.75 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "push-button-power-switch"
+				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 88.9 119.38 0)
 		(mirror y)
@@ -4712,7 +4991,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "86eb221a-e20e-49cb-8288-a9bfab42df89")
-		(property "Reference" "C1"
+		(property "Reference" "C2"
 			(at 85.09 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4798,7 +5077,7 @@
 		(instances
 			(project "push-button-power-switch"
 				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "C1")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -5404,176 +5683,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys:FSM101")
-		(at 73.66 100.33 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b3bb6d1d-1287-4123-84d4-ccac720caf45")
-		(property "Reference" "SW1"
-			(at 57.658 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "FSM101 / 1437565-3"
-			(at 57.404 91.694 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SamacSys:FSM101"
-			(at 46.99 195.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/en/product-1437565-3.html"
-			(at 46.99 295.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "50 mA Tactile Switch, Round Actuator, Off (On), Brass, Silver Contact Plating, Low Profile, 24 VDC, Alcoswitch FSM100-104"
-			(at 73.66 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part Number" "FSM101"
-			(at 73.66 100.33 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "7.5"
-			(at 46.99 495.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "506-FSM101"
-			(at 46.99 595.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-PB/FSM101?qs=emy4W%2FC1B3wcgDwCZ%2FMUoA%3D%3D"
-			(at 46.99 695.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "TE Connectivity"
-			(at 46.99 795.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "FSM101"
-			(at 46.99 895.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Sim.Params" ""
-			(at 73.66 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "81c4da5c-5e85-4813-8c8c-a9bc5164caa1")
-		)
-		(pin "1"
-			(uuid "997f0edd-187b-42be-9890-2dfb5e373c07")
-		)
-		(pin "4"
-			(uuid "0f761e94-cc07-4ce8-81bb-b976b6945204")
-		)
-		(pin "3"
-			(uuid "998c5fe7-dd37-4545-8523-eabacba1c503")
-		)
-		(instances
-			(project "push-button-power-switch"
-				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 114.3 81.28 0)
 		(mirror y)
@@ -5756,8 +5865,84 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys:T50201500000G")
-		(at 173.99 52.07 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 31.75 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4828e9f-96ba-421f-81a0-884061880202")
+		(property "Reference" "H4"
+			(at 34.29 58.4199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3 Mounting Hole"
+			(at 34.29 60.9599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 31.75 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 31.75 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "push-button-power-switch"
+				(path "/4b881c6d-f821-4d39-8b24-9399945b897d"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 179.07 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5767,7 +5952,7 @@
 		(dnp no)
 		(uuid "cb261966-9a11-46f9-be33-c9e5adf5971d")
 		(property "Reference" "J2"
-			(at 184.15 44.45 0)
+			(at 189.23 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5777,7 +5962,7 @@
 			)
 		)
 		(property "Value" "T50201500000G"
-			(at 184.15 46.99 0)
+			(at 189.23 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5787,7 +5972,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys:T50201500000G"
-			(at 190.5 146.99 0)
+			(at 179.07 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5795,11 +5980,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/18/9t_Oefo5So2A-1379158.pdf"
-			(at 190.5 246.99 0)
+			(at 179.07 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5807,11 +5991,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Description" "Pluggable Terminal Blocks TB WIR PRO 180D SOL"
-			(at 173.99 52.07 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 179.07 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5822,7 +6005,7 @@
 			)
 		)
 		(property "Height" "8.9"
-			(at 190.5 446.99 0)
+			(at 195.58 446.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5834,7 +6017,7 @@
 			)
 		)
 		(property "Mouser Part Number" "649-T502015000J0G"
-			(at 190.5 546.99 0)
+			(at 195.58 546.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5846,7 +6029,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/T50201500000G?qs=Mv7BduZupUj7X%2FJbrShOSA%3D%3D"
-			(at 190.5 646.99 0)
+			(at 195.58 646.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5858,7 +6041,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amphenol"
-			(at 190.5 746.99 0)
+			(at 195.58 746.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5870,7 +6053,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "T50201500000G"
-			(at 190.5 846.99 0)
+			(at 195.58 846.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5882,7 +6065,7 @@
 			)
 		)
 		(property "Sim.Params" ""
-			(at 173.99 52.07 0)
+			(at 179.07 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6433,8 +6616,8 @@
 		)
 	)
 	(symbol
-		(lib_id "SamacSys:T50201500000G")
-		(at 96.52 36.83 0)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 91.44 36.83 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6446,7 +6629,7 @@
 		(fields_autoplaced yes)
 		(uuid "fea13072-65d1-491a-a0cd-11a40024922d")
 		(property "Reference" "J1"
-			(at 86.36 29.21 0)
+			(at 91.44 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6456,7 +6639,7 @@
 			)
 		)
 		(property "Value" "T50201500000G"
-			(at 86.36 31.75 0)
+			(at 91.44 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6466,7 +6649,7 @@
 			)
 		)
 		(property "Footprint" "SamacSys:T50201500000G"
-			(at 80.01 131.75 0)
+			(at 91.44 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6474,11 +6657,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.co.uk/datasheet/2/18/9t_Oefo5So2A-1379158.pdf"
-			(at 80.01 231.75 0)
+			(at 91.44 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6486,11 +6668,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 			)
 		)
-		(property "Description" "Pluggable Terminal Blocks TB WIR PRO 180D SOL"
-			(at 96.52 36.83 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 91.44 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6501,7 +6682,7 @@
 			)
 		)
 		(property "Height" "8.9"
-			(at 80.01 431.75 0)
+			(at 74.93 431.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6513,7 +6694,7 @@
 			)
 		)
 		(property "Mouser Part Number" "649-T502015000J0G"
-			(at 80.01 531.75 0)
+			(at 74.93 531.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6525,7 +6706,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Anytek/T50201500000G?qs=Mv7BduZupUj7X%2FJbrShOSA%3D%3D"
-			(at 80.01 631.75 0)
+			(at 74.93 631.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6537,7 +6718,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Amphenol"
-			(at 80.01 731.75 0)
+			(at 74.93 731.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6549,7 +6730,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "T50201500000G"
-			(at 80.01 831.75 0)
+			(at 74.93 831.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6561,7 +6742,7 @@
 			)
 		)
 		(property "Sim.Params" ""
-			(at 96.52 36.83 0)
+			(at 91.44 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

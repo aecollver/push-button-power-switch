@@ -1,5 +1,6 @@
 # KiCad
 .history/
+*.bak
 *.kicad_prl
 *.lck
 

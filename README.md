@@ -42,10 +42,13 @@ See the schematic for component values and connections.
 
 The project was created using KiCad 10.0.6.
 
+A [preview of the PCB layout](docs/images/pcb.png) is available as a KiCad screenshot. The PCB hasn't been fabricated or tested yet.
+
 | File | Description |
 |---|---|
 | **[hardware/](hardware/)** | **Hardware design** |
 | [push-button-power-switch.kicad_sch](hardware/push-button-power-switch.kicad_sch) | KiCad schematic |
+| [push-button-power-switch.kicad_pcb](hardware/push-button-power-switch.kicad_pcb) | KiCad PCB layout (not yet fabricated or tested) |
 | [push-button-power-switch.kicad_pro](hardware/push-button-power-switch.kicad_pro) | KiCad project configuration |
 | [push-button-power-switch.csv](hardware/push-button-power-switch.csv) | Hardware bill of materials (BOM) |
 | **[simulation/](simulation/)** | **Simulation project** |
